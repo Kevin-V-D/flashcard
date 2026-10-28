@@ -7,9 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="flashcard-container">
-        <h1 class="study-word">target language word</h1>
-        <input type="text" class="answer">
-    </div>
+    <input type="button" id="practice" class="submit" value="Practice words">
+    <form class="create-card">
+        <div>
+            <p>Target language:</p>
+            <input type="text" id="target-language">
+        </div>
+        <div>
+            <p>translation:</p>
+            <input type="text" id="translation">
+        </div>
+        <input type="button" id="addWord" class="submit" value="Add word">
+    </form>
+
+    <script src="script.js"></script>
 </body>
 </html>
