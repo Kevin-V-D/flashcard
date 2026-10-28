@@ -13,6 +13,8 @@ btn.addEventListener("click", () => {
         name: targetLanguage.value,
         meaning: translation.value
     });
+    targetLanguage.value = "";
+    translation.value = "";
 
     localStorage.setItem('wordsList', JSON.stringify(words));
     console.log(JSON.parse(localStorage.getItem('wordsList')));
