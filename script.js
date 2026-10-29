@@ -1,4 +1,5 @@
 const form = document.querySelector('.create-card');
+const wordCategory = document.querySelector('#category');
 const targetLanguage = document.querySelector('#target-language');
 const translation = document.querySelector('#translation');
 const practice = document.querySelector('#practice');
@@ -46,6 +47,7 @@ form.addEventListener("submit", (e) => {
     }
 
     words.push({
+        category: wordCategory.value,
         learning: targetLanguage.value,
         meaning: translation.value
     });
@@ -59,7 +61,7 @@ form.addEventListener("submit", (e) => {
 });
 
 practice.addEventListener("click", () => {
-    window.location.href = "flashcards.html";
+    window.location.href = "choose_deck.html";
 });
 
 listWords(JSON.parse(localStorage.getItem('wordsList')));
