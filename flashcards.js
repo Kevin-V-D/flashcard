@@ -11,7 +11,7 @@ if (localStorage.getItem('wordsList')) {
 
 function checkWord(word) {
     return new Promise((resolve) => {
-        target.innerText = word.name;
+        target.innerText = word.learning;
         answer.value = "";
 
         const timer = setInterval(() => {
