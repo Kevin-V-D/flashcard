@@ -20,7 +20,7 @@ function listWords(wordslist) {
     });
 }
 
-if (localStorage.getItem('wordslist') != null) {
+if (localStorage.getItem('wordsList') != null) {
     words = JSON.parse(localStorage.getItem('wordsList'));
 }
 
